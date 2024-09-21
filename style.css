@@ -11,6 +11,17 @@ body {
   width: 100%;
   height: 100%;
 }
+#crsr{
+  height: 2vw;
+  width: 2vw;
+  border: 1px solid #d7d1d1;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 9999;
+  /* background-color: #fff; */
+  mix-blend-mode: difference;
+  transform: translate(-50%,-50%);
+}
 /* #0B0B0B */
 #loader {
   height: 100%;
@@ -19,6 +30,7 @@ body {
   z-index: 999;
   background-color: #0b0b0b;
   padding: 20vh 12vw; 
+  display: none;
 }
 .line {
   overflow: hidden;
@@ -98,12 +110,6 @@ body {
   }
 }
 
-
-
-
-
-
-
 #main {
   position: relative;
   background-color: #000;
@@ -113,4 +119,55 @@ body {
   height: 100vh;
   width: 100%;
   background-color: #151515;
+}
+
+#page1 #nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0vw 4.5vw;
+}
+#nav-part1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7vw;
+}
+#ob{
+  margin-left: -3vw;
+  margin-right: 6vw;
+}
+#nav-part1 p:nth-child(1){
+font-size: 1vw;
+margin-top: 2.5vw;
+}
+
+#nav-part2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vw;
+}
+#nav-part2 p{
+font-size: 1vw;
+font-weight: 100;
+}
+
+.page1-content{
+ display: flex;
+ align-items: center;
+ justify-content: flex-start ;
+ margin-left: 26.5vw;
+}
+
+.page1-content:nth-child(2){
+  margin-top: 15vh;
+ 
+}
+.page1-content h1{
+  font-family: 'Plain Light';
+  font-size: 7.2vw;
+  text-transform: uppercase;
+  line-height: 7.2vw;
+
 }

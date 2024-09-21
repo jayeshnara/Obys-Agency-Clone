@@ -33,14 +33,21 @@ function loadingAnimation() {
   tl.from("#page1", {
     delay: 0.2,
     y: 1600,
-    opacity: 0,
+    duration: 0.6,
     ease: Power4,
   });
   tl.to("#loader", {
     display: "none",
   });
+  tl.from("#nav", {
+    opacity: 0,
+  });
+  tl.from("#pc1 h1, #pc2 h1 , #pc3 h2 , #pc4 h1", {
+    y: 120,
+    stagger: 0.2,
+  });
 }
-// loadingAnimation();
+loadingAnimation();
 
 function cursorAnimation() {
   document.addEventListener("mousemove", function (dets) {

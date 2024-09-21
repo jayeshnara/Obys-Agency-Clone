@@ -11,16 +11,16 @@ body {
   width: 100%;
   height: 100%;
 }
-#crsr{
+#crsr {
   height: 2vw;
   width: 2vw;
   border: 1px solid #d7d1d1;
   border-radius: 50%;
   position: fixed;
-  z-index: 9999;
+  z-index: 999;
   /* background-color: #fff; */
   mix-blend-mode: difference;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 /* #0B0B0B */
 #loader {
@@ -29,8 +29,8 @@ body {
   position: fixed;
   z-index: 999;
   background-color: #0b0b0b;
-  padding: 20vh 12vw; 
-  display: none;
+  padding: 20vh 12vw;
+  /* display: none; */
 }
 .line {
   overflow: hidden;
@@ -40,21 +40,20 @@ body {
   justify-content: flex-start;
   gap: 3vw;
 }
-#line1-part1{
+#line1-part1 {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1vw;
-
 }
 
-#line1-part1 h5, #line1-part1 h6{
-  font-size:3.5vw;
-  font-family: 'Silk Serif';
+#line1-part1 h5,
+#line1-part1 h6 {
+  font-size: 3.5vw;
+  font-family: "Silk Serif";
   font-weight: 100;
-  
 }
-#line1-part1 h5{
+#line1-part1 h5 {
   /* background-color: red ; */
   width: 5vw;
   text-align: right;
@@ -63,11 +62,10 @@ body {
   font-size: 6.5vw;
   text-transform: uppercase;
   font-weight: 600;
-
 }
-.line h2{
+.line h2 {
   font-size: 5vw;
-  text-transform:uppercase ;
+  text-transform: uppercase;
   /* font-family: 'Silk Serif'; */
   margin-left: -30px;
   font-weight: 600;
@@ -75,38 +73,35 @@ body {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   /* text-align: center; */
-  
 }
 @keyframes anime {
-  0%{
-    font-family: 'Plain Light';
-    -webkit-text-stroke: 0.1px #fff ;
-    color:#fff;
-    font-weight: 500;
-    opacity: 1 ;
-  }
-  47%{
-    font-family: 'Plain Light';
-    -webkit-text-stroke: 0.1px #fff ;
-    color:#fff;
-    opacity: 0;
-    font-weight: 500;
-  }
-  50%{
-    font-family: 'Silk Serif';
-    -webkit-text-stroke: 1px #fff ;
-    color:transparent;
+  0% {
+    font-family: "Plain Light";
+    -webkit-text-stroke: 0.1px #fff;
+    color: #fff;
     font-weight: 500;
     opacity: 1;
-
   }
-  100%{
-    font-family: 'Silk Serif';
-    -webkit-text-stroke: 1px #fff ;
-    color:transparent;
+  47% {
+    font-family: "Plain Light";
+    -webkit-text-stroke: 0.1px #fff;
+    color: #fff;
+    opacity: 0;
+    font-weight: 500;
+  }
+  50% {
+    font-family: "Silk Serif";
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 500;
+    opacity: 1;
+  }
+  100% {
+    font-family: "Silk Serif";
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
     font-weight: 500;
     opacity: 0;
-
   }
 }
 
@@ -121,53 +116,67 @@ body {
   background-color: #151515;
 }
 
-#page1 #nav{
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 0vw 4.5vw;
+#page1 #nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0vw 4.5vw;
 }
-#nav-part1{
+#nav-part1 {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 7vw;
 }
-#ob{
+#ob {
   margin-left: -3vw;
   margin-right: 6vw;
 }
-#nav-part1 p:nth-child(1){
-font-size: 1vw;
-margin-top: 2.5vw;
+#nav-part1 p:nth-child(1) {
+  font-size: 1vw;
+  margin-top: 2.5vw;
 }
 
-#nav-part2{
+#nav-part2 {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2.5vw;
 }
-#nav-part2 p{
-font-size: 1vw;
-font-weight: 100;
+#nav-part2 p {
+  font-size: 1vw;
+  font-weight: 100;
 }
 
-.page1-content{
- display: flex;
- align-items: center;
- justify-content: flex-start ;
- margin-left: 26.5vw;
+.page1-content {
+  width: 60%;
+  margin-left: 28%;
+  height: fit-content;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  /* background-color: #d82626; */
+  position: relative;
+  z-index: 9999;
 }
 
-.page1-content:nth-child(2){
+.page1-content:nth-child(2) {
   margin-top: 15vh;
- 
 }
-.page1-content h1{
-  font-family: 'Plain Light';
+.page1-content h1 {
+  font-family: "Plain Light";
   font-size: 7.2vw;
   text-transform: uppercase;
   line-height: 7.2vw;
-
+}
+.page1-content h2 {
+  font-family: "Plain Light";
+  font-size: 7.2vw;
+  text-transform: uppercase;
+  line-height: 7.2vw;
+}
+.page1-content h2:hover {
+  -webkit-text-stroke: 1px #ffff;
+  color: transparent;
+  font-weight: 500;
 }

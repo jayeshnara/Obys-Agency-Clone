@@ -43,12 +43,10 @@ function loadingAnimation() {
     opacity: 0,
   });
   tl.from("#pc1 h1, #pc2 h1 , #pc3 h2 , #pc4 h1", {
-    y: 120,
+    y:140,
     stagger: 0.2,
   });
 }
-loadingAnimation();
-
 function cursorAnimation() {
   document.addEventListener("mousemove", function (dets) {
     gsap.to("#crsr", {
@@ -57,6 +55,9 @@ function cursorAnimation() {
     });
   });
 }
+loadingAnimation();
+
 cursorAnimation();
 
 Shery.makeMagnet("#nav-part2 p ,#navi", {});
+

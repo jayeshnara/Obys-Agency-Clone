@@ -148,21 +148,22 @@ body {
   justify-content: center;
   gap: 2.5vw;
 }
+
 #nav-part2 p {
   font-size: 1vw;
   font-weight: 100;
 }
 
 .page1-content {
-  width: 60%;
+  width: 72%;
   margin-left: 28%;
   height: fit-content;
-  overflow: hidden;
+  overflow-y: hidden;
   display: flex;
   align-items: center;
   /* background-color: #d82626; */
-  position: relative;
-  z-index: 9999;
+  /* position: relative; */
+  /* z-index: 9999; */
 }
 
 .page1-content:nth-child(2) {
@@ -173,15 +174,27 @@ body {
   font-size: 7.2vw;
   text-transform: uppercase;
   line-height: 7.2vw;
+  position: relative;
 }
+#pc1::before{
+  content: "01";
+  position: absolute;
+  font-family: "Silk Serif";
+  font-size: 3.1vw;
+  font-weight: 100;
+  top: 30.5%;
+  left:20%;
+ 
+}
+
 .page1-content h2 {
   font-family: "Plain Light";
   font-size: 7.2vw;
   text-transform: uppercase;
   line-height: 7.2vw;
   border-bottom: 0.7vw solid #fff;
-  padding-bottom: 0.5vw;
-  transition: all ease linear 0.3s;
+  /* padding-bottom: 0.5vw;
+  transition: all ease linear 0.3s; */
 }
 .page1-content h2:hover {
   -webkit-text-stroke: 1px #ffff;
@@ -254,6 +267,16 @@ body {
   font-size: 7vw;
   text-transform: uppercase;
 }
+#page4-content h1::before {
+  content: "03";
+  position: absolute;
+  margin-left: -7vw;
+  margin-top: 0.7vw;
+  font-family: "Silk Serif";
+  font-size: 3.1vw;
+  font-weight: 100;
+}
+
 #page4-content .underLine {
   height: 1.5px;
   width: 90%;
@@ -323,7 +346,6 @@ body {
 #page5 {
   min-height: 100vh;
   width: 100%;
-  padding: 0vw 0;
   background-color: #151515;
   position: relative;
 }
@@ -387,4 +409,72 @@ body {
   font-family: "Silk serif";
   font-style: italic;
   color: transparent;
+}
+#footer {
+  min-height: 100vh;
+  width: 100%;
+  padding: 3vw 3vw;
+  position: relative;
+  padding-left: 28vw;
+}
+#footer h1 {
+  font-size: 7vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  width: 74vw;
+  /* margin-left: 26%; */
+  position: relative;
+}
+#footer h1::before {
+  content: "04";
+  position: absolute;
+  margin-left: -7vw;
+  margin-top: 0.7vw;
+  font-family: "Silk Serif";
+  font-size: 3.1vw;
+  font-weight: 100;
+}
+#footer h1:hover {
+  font-family: "Silk Serif";
+  -webkit-text-stroke: 0.1px #7b7676a3;
+  color: transparent;
+}
+#footer svg {
+  height: 5vw;
+  margin-left: 1vw;
+}
+#footer .underLine {
+  height: 1.7px;
+  width: 95%;
+  background-color: #ffffff;
+  margin: 3vw 0;
+  margin-left: 0.4vw;
+  margin-right: 2vw;
+}
+
+#footer-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 2vw;
+  margin-left: 0.4vw;
+  padding-right: 8vw;
+  gap: 11.5vw;
+}
+.box {
+  margin-bottom: 2vw;
+}
+.box h6 {
+  margin-bottom: 2vw;
+  font-size: 1.3vw;
+  font-weight: 500;
+  font-family: "Plain Regular";
+}
+.box h5 {
+  font-size: 2vw;
+  font-weight: 500;
+}
+#footer p {
+  font-size: 1.5vw;
+  padding: 2vw 0;
 }

@@ -124,6 +124,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0vw 4.5vw;
+
 }
 #nav-part1 {
   display: flex;
@@ -167,7 +168,7 @@ body {
 }
 
 .page1-content:nth-child(2) {
-  margin-top: 15vh;
+  margin-top: 10vh;
 }
 .page1-content h1 {
   font-family: "Plain Light";
@@ -182,7 +183,7 @@ body {
   font-family: "Silk Serif";
   font-size: 3.1vw;
   font-weight: 100;
-  top: 30.5%;
+  top: 25.5%;
   left:20%;
  
 }
@@ -203,7 +204,7 @@ body {
   font-weight: 500;
 }
 #page2 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   padding-top: 20vh;
   position: relative;

@@ -191,6 +191,10 @@ body {
   top: 25.5%;
   left: 21%;
 }
+ #pc2,#pc4{
+  position: relative;
+  z-index: 999;
+}
 
 .page1-content h2 {
   font-family: "Plain Light";
@@ -560,11 +564,7 @@ body {
   font-size: 3.1vw;
   font-weight: 100;
 }
-#footer h1:hover {
-  font-family: "Silk Serif";
-  -webkit-text-stroke: 0.1px #7b7676a3;
-  color: transparent;
-}
+
 #footer svg {
   height: 5vw;
   margin-left: 1vw;
@@ -607,4 +607,17 @@ body {
 ._canvas_container {
   z-index: 999999 !important ;
   pointer-events: none;
+}
+#flag {
+  height: 25vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+}
+#pc3{
+  /* background-color: red ; */
+  z-index: 999;
+  position: relative;
 }

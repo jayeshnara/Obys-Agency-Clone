@@ -32,7 +32,6 @@ function locomotiveAnimation() {
   });
 
   // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll.
-  ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
   // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
   ScrollTrigger.refresh();
@@ -143,7 +142,7 @@ function cursorAnimation() {
       });
       flag = 1;
     } else {
-      video.pause()
+      video.pause();
       video.style.opacity = 0;
       document.querySelector(
         "#video-crsr"
@@ -194,10 +193,31 @@ function sheryAnimantion() {
   });
 }
 
+function flag() {
+
+  document.addEventListener("mousemove", function (dets) {
+    gsap.to("#flag", {
+      x: dets.x,
+      y: dets.y,
+    });
+  });
+  document.querySelector("#pc3").addEventListener("mouseenter", function () {
+    gsap.to("#flag", {
+      opacity: 1,
+    });
+  });
+  document.querySelector("#pc3").addEventListener("mouseleave", function () {
+    gsap.to("#flag", {
+      opacity: 0,
+    });
+  });
+}
+
 loadingAnimation();
 cursorAnimation();
 locomotiveAnimation();
 sheryAnimantion();
+flag();
 
 // function sheryAnimantion2(){
 //   Shery.imageEffect(".image-div2",{

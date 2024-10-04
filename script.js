@@ -258,7 +258,7 @@ function footerAnimation() {
     });
 }
 
-loadingAnimation();
+// loadingAnimation();
 cursorAnimation();
 locomotiveAnimation();
 sheryAnimantion();

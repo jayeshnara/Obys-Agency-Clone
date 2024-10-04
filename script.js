@@ -57,7 +57,7 @@ function loadingAnimation() {
           grow = 100;
           // console.log();
         }
-      }, 35);
+      }, 28);
     },
   });
   tl.to(".line  h2", {
@@ -67,8 +67,7 @@ function loadingAnimation() {
   tl.to("#loader", {
     opacity: 0,
     duration: 0.4,
-    // delay: 4,
-    delay: 0,
+    delay: 2.5,
   });
   tl.from("#page1", {
     delay: 0.2,
@@ -258,7 +257,7 @@ function footerAnimation() {
     });
 }
 
-// loadingAnimation();
+loadingAnimation();
 cursorAnimation();
 locomotiveAnimation();
 sheryAnimantion();
